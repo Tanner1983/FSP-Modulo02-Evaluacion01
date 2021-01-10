@@ -35,9 +35,9 @@ def menuCierre(valor_plan1,valor_plan2,valor_plan3):
     
     print("=*=*=*=*=*=*=* Menu de Cierre =*=*=*=*=*=*=*\n")
     print("Total de recaudación por los pagos de los planes que han sido contratos\n")
-    print(f"Plan 2 pantallas ${valor_plan1}, cantidad vendida {uno} planes")
-    print(f"Plan 5 pantallas Full HD ${valor_plan2}, cantidad vendida {dos} planes")
-    print(f"Plan Ilimitado ${valor_plan3}, cantidad vendida {tres} planes")
+    print(f"Plan 2 pantallas -- Total recaudado ${valor_plan1}, por la cantidad vendida {uno} planes")
+    print(f"Plan 5 pantallas Full HD -- Total recaudado ${valor_plan2}, por la cantidad vendida {dos} planes")
+    print(f"Plan Ilimitado -- Total recaudado ${valor_plan3}, por la cantidad vendida {tres} planes")
     print(f"---------------------------------------------------------\nSe han vendido en total {contratados} planes\n")
     print("Las ventas Totales son: ",int(valor_plan1)+int(valor_plan2)+int(valor_plan3))
     print("")
