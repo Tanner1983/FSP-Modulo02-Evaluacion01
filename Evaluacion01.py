@@ -76,32 +76,45 @@ while True:
         menuPlan(plan1,plan2,plan3)
         plan=input("Ingrese el numero correspondiente al plan >>>> ")
         if plan=="1":
-            print(f"Usted a contratado el plan n°1 con valor {plan1} mensual\n")
-            valor_plan1+=int(plan1)
-            contratados+=1
-            uno+=1
-            input("Presione una tecla para continuar....")
+            cantidad_planes=int(input("¿Cuantos planes contratará?: "))
+            if cantidad_planes<=0:
+                input("Cantidad ingresada es invalida")
+            else:
+                print(f"Usted a contratado {cantidad_planes} del plan n°2 con valor {plan1} mensual\nTotal a Pagar mensualmente: $",int(plan1)*cantidad_planes)
+                valor_plan1+=int(plan1)*cantidad_planes
+                contratados+=cantidad_planes
+                uno+=cantidad_planes
+                input("\nPresione una tecla para continuar....")
             
         elif plan=="2":
-            valor_plan2+=int(plan2)
-            contratados+=1
-            dos+=1
-            print(f"Usted a contratado el plan n°2 con valor {plan2} mensual\n")
-            input("Presione una tecla para continuar....")        
+            cantidad_planes=int(input("¿Cuantos planes contratará?: "))
+            if cantidad_planes<=0:
+                input("Cantidad ingresada es invalida")
+            else:
+                print(f"Usted a contratado {cantidad_planes} del plan n°3 con valor {plan2} mensual\nTotal a Pagar mensualmente: $",int(plan2)*cantidad_planes)
+                valor_plan2+=int(plan2)*cantidad_planes
+                contratados+=cantidad_planes
+                dos+=cantidad_planes
+                input("\nPresione una tecla para continuar....")        
             
         elif plan=="3":
-            valor_plan3+=int(plan3)
-            contratados+=1
-            tres+=1
-            print(f"Usted a contratado el plan n°3 con valor {plan3} mensual\n")
-            input("Presione una tecla para continuar....")        
-        elif int(plan) > 4:
+            cantidad_planes=int(input("¿Cuantos planes contratará?: "))
+            if cantidad_planes<=0:
+                input("Cantidad ingresada es invalida")
+            else:
+                print(f"Usted a contratado {cantidad_planes} del plan n°1 con valor {plan3} mensual\nTotal a Pagar mensualmente: $",int(plan3)*cantidad_planes)
+                valor_plan3+=int(plan3)*cantidad_planes
+                contratados+=cantidad_planes
+                tres+=cantidad_planes
+                input("\nPresione una tecla para continuar....")  
+                      
+        elif int(plan) > 4 or int(plan) < 0:
             print("Ha ingresado una opcion incorrecta")
             input("Presione una tecla para continuar....")
         
     elif opcion=="3":
         menuCierre(valor_plan1,valor_plan2,valor_plan3)
-    elif int(opcion) > 4:
+    elif int(opcion) > 4 or int(opcion) < 0:
         print("Ha ingresado una opcion incorrecta")
         input("Presione una tecla para continuar....")
     else:
