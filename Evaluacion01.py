@@ -55,17 +55,17 @@ while True:
         print("Plan 2 pantallas HD")
         plan1 = input(": ")
         if int(plan1)<1:
-            print("Valor ingresado es incorrecto")
+            input("Valor ingresado es incorrecto, regresará al menú principal\nPresione Enter..")
         else:
             print("\nPlan 5 pantallas Full HD")
             plan2 = input(": ")
             if int(plan2)<1:
-                print("Valor ingresado es incorrecto")
+                input("Valor ingresado es incorrecto, regresará al menú principal\nPresione Enter..")
             else:
                 print("\nPlan Ilimitado")
                 plan3 = input(": ")
                 if int(plan3)<1:
-                    print("Valor ingresado es incorrecto")
+                    input("Valor ingresado es incorrecto, regresará al menú principal\nPresione Enter..")
                 else:
                     print("===============================")
                     print(f"Planes Registrados correctamente\nPlan 2 pantallas HD ${plan1}\nPlan 5 pantallas Full HD ${plan2}\nPlan Ilimitado ${plan3}\n===============================")
